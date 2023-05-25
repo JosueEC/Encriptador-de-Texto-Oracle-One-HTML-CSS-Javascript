@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.contenedorEncriptador {
+  height: 100vh;
+  display: flex;
+  border: solid 2px red;
+}
+
+.columnaEncriptar {
+  width: 60%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  border: solid 2px green;
+}
+
+.columnaDesencriptar {
+  width: 40%;
+  border: solid 2px blue;
+}
+
+.contenedorBotones {
+  border: solid 2px darkmagenta;
+}
