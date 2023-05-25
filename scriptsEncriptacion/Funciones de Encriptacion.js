@@ -3,10 +3,10 @@ function encriptarTexto (texto) {
   for (let i = 0; i < texto.length; i++) {
     textoEncriptado += getValor(texto[i])
   }
-  
+
   return textoEncriptado;
 }
-
+  
 function desencriptarTexto (texto) {
   let textoDesencriptado = '';
   for (let i = 0; i< texto.length; i++) {
@@ -14,4 +14,9 @@ function desencriptarTexto (texto) {
   }
 
   return textoDesencriptado;
+}
+
+export {
+  encriptarTexto,
+  desencriptarTexto
 }

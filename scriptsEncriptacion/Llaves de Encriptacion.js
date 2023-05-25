@@ -30,3 +30,8 @@ function getLlave (letra) {
 
   return llavesDesencriptacion[letra] || letra;
 }
+
+export {
+  getValor,
+  getLlave
+}
