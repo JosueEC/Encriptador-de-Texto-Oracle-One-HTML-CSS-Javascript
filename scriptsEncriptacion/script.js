@@ -39,20 +39,25 @@ function encriptarTexto (texto) {
 
   return textoEncriptado;
 }
-  
-function desencriptarTexto (texto) {
-  let textoDesencriptado = '';
-  for (let i = 0; i< texto.length; i++) {
-    textoDesencriptado += getLlave(texto[i]);
-  }
 
+function desencriptarTexto (texto) {
+  let textoDesencriptado = texto.replace('ai', 'a').replace('enter', 'e').replace('imes', 'i').replace('ober', 'o').replace('ufat', 'u');
+  
   return textoDesencriptado;
 }
 
 const botonEncriptar = document.getElementById('encriptar');
 const textAreaEncriptar = document.getElementById('textoEncriptar')
 
+const botonDesencriptar = document.getElementById('desencriptar')
+const textAreaDesencriptar = document.getElementById('textoDesencriptar')
+
 botonEncriptar.addEventListener('click', (event) => {
   const textoEncriptar = textAreaEncriptar.value;
   alert(encriptarTexto(textoEncriptar));
+})
+
+botonDesencriptar.addEventListener('click', (event) => {
+  const textoDesencriptar = textAreaDesencriptar.value;
+  alert(desencriptarTexto(textoDesencriptar));
 })
