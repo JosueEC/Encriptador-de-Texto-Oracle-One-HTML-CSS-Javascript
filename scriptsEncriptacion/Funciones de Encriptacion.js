@@ -1,3 +1,5 @@
+import { getValor, getLlave } from "./Llaves de Encriptacion";
+
 function encriptarTexto (texto) {
   let textoEncriptado = '';
   for (let i = 0; i < texto.length; i++) {
